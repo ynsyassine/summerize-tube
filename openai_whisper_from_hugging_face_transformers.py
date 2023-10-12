@@ -115,7 +115,7 @@ loader = TextLoader(temp_file_path, encoding='utf8')
 documents = loader.load()
 
 texts = text_splitter.split_documents(documents)
-embeddings = OpenAIEmbeddings(openai_api_key="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")
+embeddings = OpenAIEmbeddings(openai_api_key=openai api key)
 db = Chroma.from_documents(texts, embeddings)
 
 retriever = db.as_retriever()
