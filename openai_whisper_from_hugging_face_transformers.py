@@ -90,7 +90,7 @@ texts = text_splitter.split_documents(documents)
 
 
 
-embeddings = OpenAIEmbeddings(openai_api_key="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")
+embeddings = OpenAIEmbeddings(openai_api_key=OPEN-AI-KEY)
 
 vector_store = Pinecone.from_documents(
     texts, embeddings, index_name="chat-with-text-file"
